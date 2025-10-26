@@ -7,9 +7,11 @@
 This project focuses on developing machine learning models to classify breast tumors as either benign (non-cancerous) or malignant (cancerous). Our goal is to create an accurate classification system that can assist healthcare professionals in making timely and informed decisions about patient care.
 
 ### Key Research Questions
-• What are the measurements of tumors that can cause breast cancers?
-• What other key factors should be considered such as smoothness, textures, and compactness?
-• How can we identify differences to help patients prevent cancer at early stages?
+- What are the measurements of tumors that can cause breast cancers?
+- What other key factors should be considered such as smoothness, textures, and compactness?
+- How can we identify differences to help patients prevent cancer at early stages?
+- which machine learning algorithms provide the highest accuracy in classifying breast tumors?
+- How do tumor size, location, and stage affect the likelihood of sperad in breast cancer patients?
 
 ## Project Outline/Plan
 
