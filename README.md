@@ -1,6 +1,6 @@
 # Machine Learning Models for Healthcare
 
-**Authors:** May Sabai (017390438), Thel Nu Zaw ()
+**Authors:** May Sabai (017390438), Thel Nu Zaw (017891302)
 
 ## Project Description
 
@@ -25,7 +25,7 @@ This project focuses on developing machine learning models to classify breast tu
 I have identified two datasets from Kaggle with consistent variables that will be combined to create a comprehensive dataset. The combined dataset will be split into three subsets: training (70%), testing (15%), and validation (15%) to ensure robust model evaluation. The datasets contain various tumor measurements including radius, texture, perimeter, area, smoothness, compactness, concavity, concave points, symmetry, and fractal dimensions.
 
 ### Thel Nu Zaw's Data Collection
-*[To be completed by partner]*
+I have selected the Breast Cancer Wisconsin Data Set from UCI Machine Learning Repository. This dataset conatin various tumor measurements which are consistent with the features used in Kaggle dataset so that dataset can be combined to test together. The final dataset will be split into training(70%), testing(15%), and validation(15%) subsets to ensure a fair and vigorous evaluation of the models.
 
 ## Model Plans
 
@@ -38,7 +38,7 @@ I plan to implement and compare three different machine learning algorithms:
 I have chosen not to use Multi-Layer Perceptron (MLP) or Convolutional Neural Networks (CNN) for this project because the dataset consists of numerical measurements rather than images, and these deep learning approaches would require significantly more computational resources without providing proportional benefits for this type of tabular data classification problem.
 
 ### Thel Nu Zaw's Model Approach
-*[To be completed by partner]*
+I plan to use **Logisitic Regression** for simple and interpretable model appropriate for binary classification, **KNN** for capturing local structure in the data, **Decision Tree** for making more specific predictions by its abitlity to compute model complex and non-linear relationships, and **Majority Voting Ensenble with K-Fold Cross-Validation** for combining the predictions from these models using majority voting ensemble, and evaluate model preformance using K-fold cross-validation for more robust results.
 
 ## Project Timeline
 
