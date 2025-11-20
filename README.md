@@ -24,7 +24,7 @@ This project focuses on developing machine learning models to classify breast tu
 ## Data Collection Plan
 
 ### May Sabai's Data Collection
-I have identified two datasets from Kaggle with consistent variables that will be combined to create a comprehensive dataset. The combined dataset will be split into three subsets: training (70%), testing (15%), and validation (15%) to ensure robust model evaluation. The datasets contain various tumor measurements including radius, texture, perimeter, area, smoothness, compactness, concavity, concave points, symmetry, and fractal dimensions.
+I have identified breast ultrasound image datasets that will be used for training a deep learning model. The dataset contains ultrasound images of breast tumors classified as benign, malignant, or normal. The images will be split into three subsets: training (70%), testing (15%), and validation (15%) to ensure robust model evaluation. Using ultrasound images allows for direct visual analysis of tumor characteristics and patterns that may not be captured through numerical measurements alone.
 
 ### Thel Nu Zaw's Data Collection
 I have selected the Breast Cancer Wisconsin Data Set from UCI Machine Learning Repository. This dataset conatin various tumor measurements which are consistent with the features used in Kaggle dataset so that dataset can be combined to test together. The final dataset will be split into training(70%), testing(15%), and validation(15%) subsets to ensure a fair and vigorous evaluation of the models.
@@ -32,12 +32,13 @@ I have selected the Breast Cancer Wisconsin Data Set from UCI Machine Learning R
 ## Model Plans
 
 ### May Sabai's Model Approach
-I plan to implement and compare three different machine learning algorithms:
-- **Logistic Regression**: For its interpretability and effectiveness with binary classification
-- **K-Nearest Neighbors (KNN)**: To leverage local patterns in the data
-- **Decision Tree**: For its ability to create clear decision boundaries and feature importance analysis
+I plan to implement a **Convolutional Neural Network (CNN)** for breast cancer classification from ultrasound images. CNNs are particularly well-suited for this task because they can:
+- Automatically extract relevant visual features from the ultrasound images
+- Learn hierarchical representations of tumor characteristics
+- Detect spatial patterns and textures that may indicate malignancy
+- Handle the complexity of medical image analysis
 
-I have chosen not to use Multi-Layer Perceptron (MLP) or Convolutional Neural Networks (CNN) for this project because the dataset consists of numerical measurements rather than images, and these deep learning approaches would require significantly more computational resources without providing proportional benefits for this type of tabular data classification problem.
+The CNN architecture will include multiple convolutional layers for feature extraction, pooling layers for dimensionality reduction, and fully connected layers for classification. I will experiment with different architectures, activation functions, and regularization techniques to optimize model performance. Data augmentation techniques such as rotation, flipping, and zoom will be applied to increase the robustness of the model and prevent overfitting.
 
 ### Thel Nu Zaw's Model Approach
 I plan to use **Logisitic Regression** for simple and interpretable model appropriate for binary classification, **KNN** for capturing local structure in the data, **Decision Tree** for making more specific predictions by its abitlity to compute model complex and non-linear relationships, and **Majority Voting Ensenble with K-Fold Cross-Validation** for combining the predictions from these models using majority voting ensemble, and evaluate model preformance using K-fold cross-validation for more robust results.
@@ -51,9 +52,9 @@ I plan to use **Logisitic Regression** for simple and interpretable model approp
 - [ ] Handle missing values and outliers
 
 ### Phase 2: Model Development (Week 2)
-- [ ] Implement Logistic Regression model
-- [ ] Implement K-Nearest Neighbors model
-- [ ] Implement Decision Tree model
+- [ ] Implement machine learning models (CNN for image data, traditional ML for numerical data)
+- [ ] Design and build CNN architecture for image classification
+- [ ] Train models with appropriate data preprocessing
 - [ ] Perform hyperparameter tuning for each model
 
 ### Phase 3: Model Evaluation (Week 3)
@@ -103,8 +104,8 @@ Projects/
 
 ## Expected Outcomes
 
-- A comparative analysis of three machine learning models for breast cancer classification
-- Identification of the most important features for tumor classification
+- A comparative analysis of machine learning models for breast cancer classification (CNN for image data and traditional ML for numerical data)
+- Identification of the most important features and visual patterns for tumor classification
 - A robust classification system with documented performance metrics
 - Insights into early-stage cancer detection factors
 
