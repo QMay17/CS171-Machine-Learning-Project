@@ -77,17 +77,20 @@ Projects/
 ├── .gitignore
 ├── LICENSE
 ├── data/
+│   ├── Dataset_BUSI_with_GT/
 │   ├── train/
 │   ├── test/
-│   └── validate/
+│   ├── validate/
+│   ├── test_split.csv 
+│   ├── train_split.csv
+│   └── validate_split.csv
 ├── notebooks/
 │   ├── msb_data_preprocessing.ipynb
 │   ├── msb_model_construction.ipynb
 │   ├── msb_analysis_and_visualization.ipynb
 │   ├── tnz_data_preprocessing.ipynb
 │   ├── tnz_model_construction.ipynb
-│   └── tnz_analysis_and_visualization.ipynb
-└── requirements.txt
+└── └── tnz_analysis_and_visualization.ipynb
 ```
 
 ## Getting Started
