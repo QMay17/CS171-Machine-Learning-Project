@@ -85,12 +85,11 @@ Projects/
 │   ├── train_split.csv
 │   └── validate_split.csv
 ├── notebooks/
+│   ├── analysis_and_visualization.ipynb
 │   ├── msb_data_preprocessing.ipynb
 │   ├── msb_model_construction.ipynb
-│   ├── msb_analysis_and_visualization.ipynb
 │   ├── tnz_data_preprocessing.ipynb
-│   ├── tnz_model_construction.ipynb
-└── └── tnz_analysis_and_visualization.ipynb
+└── └── tnz_model_construction.ipynb
 ```
 
 ## Getting Started
