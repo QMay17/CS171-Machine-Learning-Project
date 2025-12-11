@@ -41,7 +41,7 @@ I plan to implement a **Convolutional Neural Network (CNN)** for breast cancer c
 The CNN architecture will include multiple convolutional layers for feature extraction, pooling layers for dimensionality reduction, and fully connected layers for classification. I will experiment with different architectures, activation functions, and regularization techniques to optimize model performance. Data augmentation techniques such as rotation, flipping, and zoom will be applied to increase the robustness of the model and prevent overfitting.
 
 ### Thel Nu Zaw's Model Approach
-I plan to use **Logisitic Regression** for simple and interpretable model appropriate for binary classification, **KNN** for capturing local structure in the data, **Decision Tree** for making more specific predictions by its abitlity to compute model complex and non-linear relationships, and **Majority Voting Ensenble with K-Fold Cross-Validation** for combining the predictions from these models using majority voting ensemble, and evaluate model preformance using K-fold cross-validation for more robust results.
+I plan to use Logistic Regression as an interpretable baseline model for binary classification, KNN to capture local neighborhood patterns, and a Decision Tree to model complex and non-linear relationships. To improve overall reliability, I combined these three models using a Majority Voting Ensemble, where each model contributes to the final prediction. All models will be trained on the same training split and evaluated using a validation set and a held-out test set to ensure consistent and fair performance comparison.
 
 ## Project Timeline
 
@@ -83,13 +83,15 @@ Projects/
 │   ├── validate/
 │   ├── test_split.csv 
 │   ├── train_split.csv
-│   └── validate_split.csv
+│   ├── validate_split.csv
+└── └── scaler.pkl
 ├── notebooks/
 │   ├── analysis_and_visualization.ipynb
 │   ├── msb_data_preprocessing.ipynb
 │   ├── msb_model_construction.ipynb
 │   ├── tnz_data_preprocessing.ipynb
-└── └── tnz_model_construction.ipynb
+│   ├── tnz_model_construction.ipynb
+└── └── wdbc.data
 ```
 
 ## Getting Started
